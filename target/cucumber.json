@@ -1,0 +1,420 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10762355800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Verify delete functionality",
+        "description": "",
+        "id": "adding-order;verify-delete-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 657316600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2431826700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Navigate to login page",
+            "match": {
+              "location": "VerifyLoginFunctionality.navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 570116600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User logs in with valid credentials username \"Tester\" password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 46
+                },
+                {
+                  "val": "test",
+                  "offset": 64
+                }
+              ],
+              "location": "VerifyLoginFunctionality.user_logs_in_with_valid_credentials_username_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 803289600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User deletes \"Mark Smith\" from table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mark Smith",
+                  "offset": 14
+                }
+              ],
+              "location": "AddingOrderSteps.userDeletesFromTable(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 652974700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Validate that \"Mark Smith\" is deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mark Smith",
+                  "offset": 15
+                }
+              ],
+              "location": "AddingOrderSteps.validateThatIsDeleted(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TEC-102"
+          },
+          {
+            "line": 1,
+            "name": "@ui"
+          },
+          {
+            "line": 23,
+            "name": "@TecTC-1015"
+          },
+          {
+            "line": 1,
+            "name": "@smokeTest"
+          },
+          {
+            "line": 1,
+            "name": "@regressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9544445700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Verify delete functionality",
+        "description": "",
+        "id": "adding-order;verify-delete-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 728170700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2272206100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Navigate to login page",
+            "match": {
+              "location": "VerifyLoginFunctionality.navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 689947400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User logs in with valid credentials username \"Tester\" password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 46
+                },
+                {
+                  "val": "test",
+                  "offset": 64
+                }
+              ],
+              "location": "VerifyLoginFunctionality.user_logs_in_with_valid_credentials_username_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 992148600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User deletes \"Samuel Clemens\" from table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samuel Clemens",
+                  "offset": 14
+                }
+              ],
+              "location": "AddingOrderSteps.userDeletesFromTable(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 628549100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Validate that \"Samuel Clemens\" is deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samuel Clemens",
+                  "offset": 15
+                }
+              ],
+              "location": "AddingOrderSteps.validateThatIsDeleted(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TEC-102"
+          },
+          {
+            "line": 1,
+            "name": "@ui"
+          },
+          {
+            "line": 23,
+            "name": "@TecTC-1015"
+          },
+          {
+            "line": 1,
+            "name": "@smokeTest"
+          },
+          {
+            "line": 1,
+            "name": "@regressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9530313900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Verify delete functionality",
+        "description": "",
+        "id": "adding-order;verify-delete-functionality;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 692206100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2267150100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Navigate to login page",
+            "match": {
+              "location": "VerifyLoginFunctionality.navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 739187500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User logs in with valid credentials username \"Tester\" password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 46
+                },
+                {
+                  "val": "test",
+                  "offset": 64
+                }
+              ],
+              "location": "VerifyLoginFunctionality.user_logs_in_with_valid_credentials_username_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 994182000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User deletes \"Paul Brown\" from table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Paul Brown",
+                  "offset": 14
+                }
+              ],
+              "location": "AddingOrderSteps.userDeletesFromTable(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 500767400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Validate that \"Paul Brown\" is deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Paul Brown",
+                  "offset": 15
+                }
+              ],
+              "location": "AddingOrderSteps.validateThatIsDeleted(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TEC-102"
+          },
+          {
+            "line": 1,
+            "name": "@ui"
+          },
+          {
+            "line": 23,
+            "name": "@TecTC-1015"
+          },
+          {
+            "line": 1,
+            "name": "@smokeTest"
+          },
+          {
+            "line": 1,
+            "name": "@regressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Adding order",
+    "description": "",
+    "id": "adding-order",
+    "keyword": "Feature",
+    "uri": "AddingOrder.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@TEC-102"
+      },
+      {
+        "line": 1,
+        "name": "@ui"
+      },
+      {
+        "line": 1,
+        "name": "@smokeTest"
+      },
+      {
+        "line": 1,
+        "name": "@regressionTest"
+      }
+    ]
+  }
+]
