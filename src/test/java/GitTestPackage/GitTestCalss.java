@@ -5,5 +5,7 @@ public class GitTestCalss {
         System.out.println("New Class");
 
         System.out.println("Hi Kira");
+
+        System.out.println("Hello Kubat");
     }
 }
