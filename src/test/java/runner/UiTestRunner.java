@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/cucumberHTML-report", "pretty", "json:target/cucumber.json"},
-        features = "src/test/resources/uiFeatures",
+        features = {"src/test/resources/uiFeatures","src/test/resources/dbFeatures"},
         glue = "stepDefs",
         dryRun = false,
-        tags = "@TecTC-1015"
+        tags = "@HRProject1"
 )
 
 public class UiTestRunner {

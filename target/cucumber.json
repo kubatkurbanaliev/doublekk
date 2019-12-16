@@ -1,12 +1,12 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 10762355800,
+              "duration": 10243793900,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 31,
-        "name": "Verify delete functionality",
+        "line": 8,
+        "name": "B",
         "description": "",
-        "id": "adding-order;verify-delete-functionality;;2",
+        "id": "adding-below-data-to-your-excel-file-in-sheet3;b",
         "after": [
           {
             "result": {
-              "duration": 657316600,
+              "duration": 615118000,
               "status": "passed"
             },
             "match": {
@@ -30,391 +30,45 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2431826700,
+              "duration": 6420570200,
               "status": "passed"
             },
-            "line": 25,
-            "name": "Navigate to login page",
+            "line": 9,
+            "name": "Go to Database and get Department Name and number of ‘Active’employees and validate with their UI numbers",
             "match": {
-              "location": "VerifyLoginFunctionality.navigate_to_login_page()"
+              "location": "HRApplicationSteps.goToDatabaseAndGetDepartmentNameAndNumberOfActiveEmployeesAndValidateWithTheirUINumbers()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 570116600,
+              "duration": 35600,
               "status": "passed"
             },
-            "line": 26,
-            "name": "User logs in with valid credentials username \"Tester\" password \"test\"",
+            "line": 10,
+            "name": "Then go to Excel and update column ‘Actual # of Employees’ with number of Active employees that you get from UI and compare that number with ‘expected # of Employees’ and if they matched then update ‘Test Execution Status’ cell as PASSEDif not match then update with FAILED",
             "match": {
-              "arguments": [
-                {
-                  "val": "Tester",
-                  "offset": 46
-                },
-                {
-                  "val": "test",
-                  "offset": 64
-                }
-              ],
-              "location": "VerifyLoginFunctionality.user_logs_in_with_valid_credentials_username_password(String,String)"
+              "location": "HRApplicationSteps.thenGoToExcelAndUpdateColumnActualOfEmployeesWithNumberOfActiveEmployeesThatYouGetFromUIAndCompareThatNumberWithExpectedOfEmployeesAndIfTheyMatchedThenUpdateTestExecutionStatusCellAsPASSEDifNotMatchThenUpdateWithFAILED()"
             },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 803289600,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User deletes \"Mark Smith\" from table",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Mark Smith",
-                  "offset": 14
-                }
-              ],
-              "location": "AddingOrderSteps.userDeletesFromTable(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 652974700,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Validate that \"Mark Smith\" is deleted",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Mark Smith",
-                  "offset": 15
-                }
-              ],
-              "location": "AddingOrderSteps.validateThatIsDeleted(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 1,
-            "name": "@TEC-102"
-          },
-          {
-            "line": 1,
-            "name": "@ui"
-          },
-          {
-            "line": 23,
-            "name": "@TecTC-1015"
-          },
-          {
-            "line": 1,
-            "name": "@smokeTest"
-          },
-          {
-            "line": 1,
-            "name": "@regressionTest"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 9544445700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setup()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "Verify delete functionality",
-        "description": "",
-        "id": "adding-order;verify-delete-functionality;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 728170700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2272206100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Navigate to login page",
-            "match": {
-              "location": "VerifyLoginFunctionality.navigate_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 689947400,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User logs in with valid credentials username \"Tester\" password \"test\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Tester",
-                  "offset": 46
-                },
-                {
-                  "val": "test",
-                  "offset": 64
-                }
-              ],
-              "location": "VerifyLoginFunctionality.user_logs_in_with_valid_credentials_username_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 992148600,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User deletes \"Samuel Clemens\" from table",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Samuel Clemens",
-                  "offset": 14
-                }
-              ],
-              "location": "AddingOrderSteps.userDeletesFromTable(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 628549100,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Validate that \"Samuel Clemens\" is deleted",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Samuel Clemens",
-                  "offset": 15
-                }
-              ],
-              "location": "AddingOrderSteps.validateThatIsDeleted(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@TEC-102"
-          },
-          {
-            "line": 1,
-            "name": "@ui"
-          },
-          {
-            "line": 23,
-            "name": "@TecTC-1015"
-          },
-          {
-            "line": 1,
-            "name": "@smokeTest"
-          },
-          {
-            "line": 1,
-            "name": "@regressionTest"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 9530313900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setup()"
-            }
-          }
-        ],
-        "line": 33,
-        "name": "Verify delete functionality",
-        "description": "",
-        "id": "adding-order;verify-delete-functionality;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 692206100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2267150100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Navigate to login page",
-            "match": {
-              "location": "VerifyLoginFunctionality.navigate_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 739187500,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User logs in with valid credentials username \"Tester\" password \"test\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Tester",
-                  "offset": 46
-                },
-                {
-                  "val": "test",
-                  "offset": 64
-                }
-              ],
-              "location": "VerifyLoginFunctionality.user_logs_in_with_valid_credentials_username_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 994182000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User deletes \"Paul Brown\" from table",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Paul Brown",
-                  "offset": 14
-                }
-              ],
-              "location": "AddingOrderSteps.userDeletesFromTable(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 500767400,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Validate that \"Paul Brown\" is deleted",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Paul Brown",
-                  "offset": 15
-                }
-              ],
-              "location": "AddingOrderSteps.validateThatIsDeleted(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@TEC-102"
-          },
-          {
-            "line": 1,
-            "name": "@ui"
-          },
-          {
-            "line": 23,
-            "name": "@TecTC-1015"
-          },
-          {
-            "line": 1,
-            "name": "@smokeTest"
-          },
-          {
-            "line": 1,
-            "name": "@regressionTest"
+            "line": 7,
+            "name": "@HRProject1"
           }
         ]
       }
     ],
-    "name": "Adding order",
+    "name": "Adding below data to your excel file in Sheet3",
     "description": "",
-    "id": "adding-order",
+    "id": "adding-below-data-to-your-excel-file-in-sheet3",
     "keyword": "Feature",
-    "uri": "AddingOrder.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@TEC-102"
-      },
-      {
-        "line": 1,
-        "name": "@ui"
-      },
-      {
-        "line": 1,
-        "name": "@smokeTest"
-      },
-      {
-        "line": 1,
-        "name": "@regressionTest"
-      }
-    ]
+    "uri": "Project.feature"
   }
 ]

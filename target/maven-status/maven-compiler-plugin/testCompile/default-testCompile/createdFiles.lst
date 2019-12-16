@@ -1,12 +1,12 @@
 pages\LoginPage.class
 utilities\Configuration.class
+stepDefs\AddingOrderSteps.class
+stepDefs\Hooks.class
+stepDefs\VerifyLoginFunctionality.class
+pages\EtsyHomePage.class
 utilities\Driver.class
 pages\OrdersPage.class
 utilities\BrowserUtils.class
 pages\ViewAllOrdersPage.class
 stepDefs\EtsySearch.class
-stepDefs\AddingOrderSteps.class
-stepDefs\Hooks.class
-stepDefs\VerifyLoginFunctionality.class
-pages\EtsyHomePage.class
 runner\UiTestRunner.class
